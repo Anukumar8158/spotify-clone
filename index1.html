@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #554b91;
+        }
+    
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: whitesmoke;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+           
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, select, button {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .navbar a{
+            color: black;
+            font-size: larger;
+            font-weight: bold;
+            font-style: none;
+        
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Task Management System</h1>
+</header>
+<div class="navbar"> 
+<nav>
+    <a href="#">Dashboard</a> |
+    <a href="#">Task List</a> |
+    <a href="#">Profile</a>
+</nav>
+</div>
+
+
+
+<section>
+    <div class="Dashboard">
+        <h2>Dashboard</h2>
+        <br>
+        <p>Welcome, User! Here's an overview of your tasks:</p>
+        
+        <div>Total Tasks: 10 | Completed: 5 | Pending: 5</div>
+        <button>Add Task</button>
+    
+    </div>
+     
+    <h2>Task List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Description</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Task 1</td>
+                <td>Description 1</td>
+                <td>2024-01-31</td>
+                <td>Pending</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <!-- More task rows go here -->
+        </tbody>
+    </table>
+
+    <h2>Add New Task</h2>
+    <form>
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" name="taskName" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required>
+
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+
+        <button type="submit">Save Task</button>
+    </form>
+</section>
+
+<footer>
+      
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@500&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    
+    font-family: 'Afacad', sans-serif;
+}
+
+nav ul {
+    list-style-type:none;
+    display: flex;
+    align-items:center;
+    font-size: larger;
+
+    height: 50px;
+    background-color: black;
+    color: azure;
+     padding: 10px;
+    
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 35px;
+    padding: 0 8px;
+    border-radius:30px;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+.bottom{
+    position:sticky;
+    background-color: black;
+    height: 145px;
+    text-align: center;
+    
+   
+}
+.bottom input{
+    margin-top: 17px;
+}
+
+.container{
+    min-height: 73vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    background-image:url('original.jpg');
+    
+}
+#myprogress{
+    width:70vw;
+    cursor: pointer;
+     
+
+}
+.songItem{
+    display: flex;
+    height: 30px;
+    width: 275px;
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;   
+}
+.songItem img{
+    width: 25px;
+    margin: 0 18px;
+     border-radius: 10px;
+
+}
+.icon{
+    padding:10px;
+    
+}
+
+.icon img{
+    background-color: white;
+    max-width: 45px;
+    max-height: 45px;
+     border-radius: 50px;
+
+}
+.songlistplay img{
+    border-radius: 15px;
+    width: 18px;
+    height: 20px;
+}
+.playlistisdebar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(120, 122, 233);
+    
+    border-radius: 10px;
+    height:475px;
+    width: 180px;
+    position:absolute;
+    top: 90px;
+    left: 10px;
+    align-items: center;
+}
+.songInfo{
+    display: flex;
+    color: antiquewhite;
+    position: absolute;
+    left:15vw;
+    top: 40px;
+   
+}
+ 
+ 
